@@ -1,49 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Support for Kherson Refugees</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Help Kherson</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Support for Kherson Refugees</h1>
-  </header>
+    <header>
+        <h1>Support Kherson</h1>
+        <a class="donate-btn" href="https://www.paypal.com/donate?business=helpkherson12@gmail.com" target="_blank">Donate via PayPal</a>
+    </header>
 
-  <main>
-    <section class="intro">
-      <p>
-        Due to the ongoing war, thousands of families from Kherson have lost their homes and livelihoods. 
-        Many are in urgent need of food, shelter, and medical assistance. 
-        Your support can make a direct difference in their lives.
-      </p>
-    </section>
+    <main>
+        <section class="gallery">
+            <figure>
+                <img src="images/war1.jpg" alt="Dormition Cathedral in Kherson" class="lightbox-img">
+                <figcaption>Dormition Cathedral after shelling</figcaption>
+            </figure>
+            <figure>
+                <img src="images/war2.jpg" alt="Destructions in Kherson" class="lightbox-img">
+                <figcaption>Destroyed residential buildings</figcaption>
+            </figure>
+            <figure>
+                <img src="images/war3.jpg" alt="Chapel of Feodor Ushakov in Kherson" class="lightbox-img">
+                <figcaption>Chapel of Feodor Ushakov after shelling</figcaption>
+            </figure>
+        </section>
 
-    <section class="gallery">
-      <img src="images/war1.jpg" alt="Destroyed building in war" />
-      <img src="images/war2.jpg" alt="Humanitarian aid" />
-      <img src="images/war3.jpg" alt="Refugees in need" />
-    </section>
+        <section class="sources">
+            <h2>Official Wikimedia Commons sources</h2>
+            <ul>
+                <li><a href="https://commons.wikimedia.org/wiki/File:Dormition_Cathedral_in_Kherson_after_Russian_shelling,_2024-02-04_(01).jpg" target="_blank">Dormition Cathedral after shelling</a></li>
+                <li><a href="https://commons.wikimedia.org/wiki/File:Destructions_in_Kherson_after_Russian_attack,_2024-05-15_(01).jpg" target="_blank">Destructions in Kherson</a></li>
+                <li><a href="https://commons.wikimedia.org/wiki/File:Chapel_of_Feodor_Ushakov_in_Kherson_after_Russian_shelling,_2023-12-30_(01).jpg" target="_blank">Chapel of Feodor Ushakov after shelling</a></li>
+            </ul>
+        </section>
+    </main>
 
-    <section class="video">
-      <h2>Recent Footage from Kherson</h2>
-      <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/0jhu8-ZR3G8" 
-        title="Shelling in Kherson" frameborder="0" allowfullscreen></iframe>
-      </div>
-    </section>
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox">
+        <span class="close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img">
+        <a class="prev">&#10094;</a>
+        <a class="next">&#10095;</a>
+    </div>
 
-    <section class="donate">
-      <a href="https://www.paypal.com/donate?business=helpkherson12@gmail.com" target="_blank" class="donate-btn">
-        Donate via PayPal
-      </a>
-      <p class="note">Your support helps provide housing, food, and medical aid.</p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Help Kherson Initiative. All rights reserved.</p>
-  </footer>
+    <script src="script.js"></script>
 </body>
 </html>
