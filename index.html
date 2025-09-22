@@ -1,159 +1,37 @@
-<!doctype html>
-<html lang="ru">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Помощь Херсону — Donate</title>
-  <meta name="description" content="Помощь беженцам из Херсона — донаты, волонтёрство, необходимые вещи и контакты." />
-  <style>
-    :root{--bg:#0f6aa0;--accent:#f6c94d;--card:#ffffff;--muted:rgba(255,255,255,0.9)}
-    *{box-sizing:border-box}
-    body{margin:0;font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; color:#053045;background:linear-gradient(180deg,var(--bg) 0%, #3f8fb0 45%, #c9b76a 100%);min-height:100vh;display:flex;align-items:center;justify-content:center;padding:24px}
-    .container{width:100%;max-width:980px;background:rgba(255,255,255,0.03);border-radius:14px;padding:36px;backdrop-filter:blur(6px);box-shadow:0 10px 30px rgba(2,18,29,0.25)}
-    header h1{font-size:46px;margin:0 0 6px;color:white}
-    header p.lead{font-size:18px;line-height:1.4;color:var(--muted);margin:0 0 18px}
-    .grid{display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:start}
-    .card{background:linear-gradient(180deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));padding:20px;border-radius:10px}
-    .objective{font-weight:700;color:white;margin-bottom:12px}
-    .text{color:var(--muted);line-height:1.6}
-    .icons{display:flex;gap:12px;margin:18px 0}
-    .icons .pill{display:inline-flex;align-items:center;gap:8px;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,0.06);color:white}
-    .donate{display:flex;flex-direction:column;align-items:center;gap:12px}
-    .donate .email{background:var(--accent);padding:12px 18px;border-radius:12px;color:#042036;font-weight:700;text-decoration:none}
-    .donate .btn{display:inline-block;padding:12px 18px;border-radius:10px;background:#0a9bd9;color:white;text-decoration:none;font-weight:700;border:0}
-    .small{font-size:14px;color:var(--muted)}
-    form{display:flex;flex-direction:column;gap:10px}
-    input,textarea,select{padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.08);background:transparent;color:white}
-    label{color:var(--muted);font-size:14px}
-    footer{margin-top:18px;color:var(--muted);font-size:14px;text-align:center}
-    @media(max-width:880px){.grid{grid-template-columns:1fr;}.donate .email{width:100%;text-align:center}}
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Help Kherson Refugees</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Подключаем иконки -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-  <div class="container" role="main">
-    <header>
-      <h1>Помощь Херсону</h1>
-      <p class="lead">В результате военных действий жители Херсона были вынуждены покинуть свои дома. Многие семьи потеряли жильё, доход и доступ к основным ресурсам.</p>
-    </header>
+  <div class="card">
+    <h1>Help Kherson Refugees</h1>
+    <p>
+      As a result of the ongoing conflict, residents of Kherson have been forced to leave their homes. 
+      Many families have lost housing, income, and access to essential resources.
+    </p>
+    <p>
+      <b>Objective:</b> Provide refugees with food, medical aid, temporary shelter, and hygiene supplies.
+    </p>
 
-    <div class="grid">
-      <div>
-        <section class="card">
-          <div class="objective">Цель: Обеспечить беженцев продуктами, медицинской помощью, временным приютом и средствами гигиены.</div>
-          <p class="text">Эта страница собирает пожертвования и волонтёров, чтобы доставлять еду, медикаменты и необходимые вещи семьям, которые пострадали. Если у вас есть вещи для передачи или вы готовы помочь логистикой — заполните форму справа.</p>
-
-          <div class="icons">
-            <div class="pill">🥖 Продукты</div>
-            <div class="pill">➕ Медпомощь</div>
-            <div class="pill">🏠 Приют</div>
-            <div class="pill">🧼 Гигиена</div>
-          </div>
-
-          <h3 style="color:white;margin-top:8px">Как ещё помочь</h3>
-          <ul class="text">
-            <li>Распространите ссылку в социальных сетях</li>
-            <li>Предложите временное жильё или транспорт</li>
-            <li>Свяжитесь для координации помощи</li>
-          </ul>
-
-        </section>
-
-        <footer>
-          <p>Каждый вклад важен — помогите восстановить безопасное будущее.</p>
-        </footer>
-      </div>
-
-      <aside>
-        <div class="card donate" aria-labelledby="donate-title">
-          <h2 id="donate-title" style="margin:0;color:white">Пожертвовать через PayPal</h2>
-          <p class="small">Безопасный платёж через PayPal — введите сумму на сайте PayPal или нажмите кнопку.</p>
-
-          <!-- Donate link using provided email -->
-          <a class="email" href="https://www.paypal.com/donate?business=helpkherson12%40gmail.com" target="_blank" rel="noopener noreferrer">helpkherson12@gmail.com</a>
-
-          <a class="btn" href="https://www.paypal.com/donate?business=helpkherson12%40gmail.com" target="_blank" rel="noopener noreferrer">Перейти к оплате</a>
-
-          <p class="small">Если вы хотите отправить напрямую: <a href="mailto:helpkherson12@gmail.com" style="color:inherit;font-weight:700;text-decoration:underline">helpkherson12@gmail.com</a></p>
-
-          <hr style="width:100%;border:none;height:1px;background:rgba(255,255,255,0.04);margin:12px 0">
-
-          <h3 style="color:white;margin:0">Стать волонтёром</h3>
-          <p class="small">Заполните форму — координатор свяжется с вами.</p>
-
-          <form id="volunteerForm">
-            <label for="name">Имя</label>
-            <input id="name" name="name" type="text" placeholder="Ваше имя" required>
-
-            <label for="email">Email</label>
-            <input id="email" name="email" type="email" placeholder="you@mail.com" required>
-
-            <label for="helpType">Готов помочь</label>
-            <select id="helpType" name="helpType">
-              <option>Транспорт</option>
-              <option>Приём беженцев</option>
-              <option>Доставка еды/вещей</option>
-              <option>Медпомощь</option>
-            </select>
-
-            <label for="message">Комментарий (опционально)</label>
-            <textarea id="message" name="message" rows="3" placeholder="Кратко о том, как вы можете помочь"></textarea>
-
-            <button type="submit" class="btn" style="background:#04657f">Отправить</button>
-          </form>
-
-          <p id="formResult" class="small" style="display:none;margin-top:6px"></p>
-        </div>
-
-        <div style="height:12px"></div>
-
-        <div class="card small" style="text-align:center">
-          <strong>Поделиться</strong>
-          <div style="margin-top:8px;display:flex;gap:8px;justify-content:center">
-            <button class="pill" onclick="copyLink()">📋 Скопировать ссылку</button>
-
-            <a class="pill" href="#" onclick="share('facebook')">Facebook</a>
-            <a class="pill" href="#" onclick="share('telegram')">Telegram</a>
-            <a class="pill" href="#" onclick="share('vk')">VK</a>
-          </div>
-        </div>
-      </aside>
+    <div class="icons">
+      <i class="fa-solid fa-bread-slice"></i>
+      <i class="fa-solid fa-kit-medical"></i>
     </div>
+
+    <!-- Кнопка для пожертвования -->
+    <a href="https://www.paypal.com/donate?business=helpkherson12@gmail.com" target="_blank" class="donate-btn">
+      Donate via PayPal
+    </a>
+
+    <p class="note">
+      Every contribution counts — help restore a safe future.
+    </p>
   </div>
-
-  <script>
-    // Простая отправка формы локально — замените на ваш бэкенд / Google Forms / Zapier
-    document.getElementById('volunteerForm').addEventListener('submit', function(e){
-      e.preventDefault();
-      var name = document.getElementById('name').value;
-      var email = document.getElementById('email').value;
-      var helpType = document.getElementById('helpType').value;
-      var message = document.getElementById('message').value;
-      // Здесь вы можете отправить данные на сервер. Для примера — показываем сообщение.
-      var res = document.getElementById('formResult');
-      res.style.display = 'block';
-      res.textContent = 'Спасибо, '+name+", мы свяжемся с вами по " + email + ' в ближайшее время.';
-      this.reset();
-    });
-
-    function share(platform){
-      var url = encodeURIComponent(window.location.href);
-      var text = encodeURIComponent('Поддержите беженцев из Херсона — ссылка для пожертвований: helpkherson12@gmail.com');
-      var link = '#';
-      if(platform==='facebook') link = 'https://www.facebook.com/sharer/sharer.php?u='+url;
-      if(platform==='telegram') link = 'https://t.me/share/url?url='+url+'&text='+text;
-      if(platform==='vk') link = 'https://vk.com/share.php?url='+url;
-      window.open(link,'_blank');
-    }
-  
-    function copyLink(){
-      var url = window.location.href;
-      navigator.clipboard.writeText(url).then(function(){
-        alert('Ссылка скопирована: ' + url);
-      }, function(err){
-        alert('Ошибка копирования: ' + err);
-      });
-    }
-
-</script>
 </body>
 </html>
